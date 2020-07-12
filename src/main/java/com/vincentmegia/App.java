@@ -30,8 +30,7 @@ public class App
         }
         int counter = 0;
         for (int n : store.values()) {
-            int summation = (n*(n+1))/2;
-            summation = summation - n;
+            int summation = ((n*(n+1))/2) -n;
             counter += summation;
         }
         return counter;
